@@ -8,7 +8,7 @@
     <TextView
         android:layout_width="math_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/editText1" android:text="0"
+        android:text="Operand 1, (And Result)"
         />
 
 </LinearLayout>
