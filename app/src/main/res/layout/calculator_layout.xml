@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="5dp" android:padding="5dp"
-    android:backgroud="@android:color/darker_gray"
+    android:background="@android:color/darker_gray"
     >
     <TextView
         android:layout_width="match_parent"
@@ -41,7 +41,7 @@
         android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <Button android:text="+" android:id="@+id/plushButton"
+        <Button android:text="+" android:id="@+id/plusButton"
             android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" >
@@ -60,4 +60,10 @@
             android:layout_height="wrap_content" />
     </LinearLayout>
 
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText3" android:text="0"
+        android:inputType="numberDecimal"
+        />
 </LinearLayout>
