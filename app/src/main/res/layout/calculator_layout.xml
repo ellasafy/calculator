@@ -2,9 +2,8 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="5dp" android:padding="5dp"
     android:background="@android:color/darker_gray"
-    >
+    android:onClick="onClick">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -13,7 +12,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/editText1" android:text="0"
+        android:id="@+id/editText1" android:text=""
         android:inputType="numberDecimal"
         />
     <TextView
@@ -25,7 +24,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="0"
+        android:text=""
         android:id="@+id/editText2"
         android:inputType="numberDecimal"
         />
@@ -40,30 +39,38 @@
         android:orientation="horizontal"
         android:layout_marginTop="10dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <Button android:text="+" android:id="@+id/plusButton"
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        >
+        <Button
+            style="@style/custo"
+            android:text="+" android:id="@+id/plusButton">
         </Button>
-        <Button android:text="-" android:id="@+id/minusButton"
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-        <Button android:text="*" android:id="@+id/multiplyButton"
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-        <Button android:text="/" android:id="@+id/divideButton"
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+        <Button
+            style="@style/custo"
+            android:text="-" android:id="@+id/minusButton"/>
+        <Button
+            style="@style/custo"
+            android:text="*" android:id="@+id/multiplyButton" />
+        <Button
+            style="@style/custo"
+            android:text="/" android:id="@+id/divideButton" />
+
     </LinearLayout>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/editText3" android:text="0"
+        android:id="@+id/editText3" android:text=""
         android:inputType="numberDecimal"
         />
+    <Button
+        android:id="@+id/next"
+        android:layout_centerHorizontal="true"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:text="@string/content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/red"
+        android:height="30dp" />
 </LinearLayout>

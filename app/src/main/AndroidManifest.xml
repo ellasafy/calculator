@@ -2,20 +2,32 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.ellsasa.calculator" >
 
-    <uses-sdk android:minSdkVersion="14"/>
+    <uses-sdk android:minSdkVersion="14" />
+
+    <android:uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:icon="@mipmap/ic_launcher"
-        android:label="nameccc">
+        android:label="@string/title_activity_calculator"
+        android:theme="@style/AppTheme" >
         <activity
             android:name=".calculator"
-            android:label="@string/title_activity_calculator"
-            android:icon="@mipmap/ic_launcher"
+            android:actionBarSize="238dp"
+            android:background="@color/red"
+            android:height="280dp"
             android:logo="@mipmap/ic_launcher"
-            android:theme="@style/AppTheme">
+            android:theme="@style/my_actionbar_style" >
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".contTent"
+            android:label="@string/title_activity_cont_tent" >
         </activity>
     </application>
 

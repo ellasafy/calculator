@@ -2,6 +2,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.ellsasa.calculator.calculator">
-    <item android:id="@+id/action_settings" android:title="@string/action_settings"
-        android:orderInCategory="100"  />
+
+
+    <group android:id="@+id/group_main">
+        <item android:id="@+id/menu_1"
+            android:title="this is 1"/>
+        <item android:id="@+id/menu_2"
+            android:title="this is 2"/>
+    </group>
 </menu>
